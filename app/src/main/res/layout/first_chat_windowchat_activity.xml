@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/enter_chat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Switch"
+        android:background="#5BE300"
+        android:padding="5dp"
+        android:text="NEXT"
+        android:layout_centerHorizontal="true"
+        android:onClick="enterChat"
+ />
+
+
+    <EditText
+        android:id="@+id/Input_chat_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/what_to_do_below"
+        android:layout_alignParentTop="@+id/what_to_do_below"
+
+ />
+
+    <EditText
+        android:id="@+id/Input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/what_to_do_above"
+
+        />
+
+    <TextView
+        android:id="@+id/what_to_do_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Please enter the chat room you are trying to enter below:"
+        android:background="#5BE300"/>
+    <TextView
+        android:id="@+id/what_to_do_above"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your username below:"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Input_chat_name"
+        android:background="#5BE300"/>
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_for_Switch"
+        android:background="#4dff00"
+        />
+    <TextView
+        android:id="@+id/TextView_for_Switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Input_username"
+        android:text="Enable Incognito Mode"/>
+</RelativeLayout>
